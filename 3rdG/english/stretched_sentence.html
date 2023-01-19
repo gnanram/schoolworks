@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stretched Sentence</title>
+	<style type="text/css">
+		    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        font: 12pt "Tahoma";
+    }
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .page {
+        width: 297mm;
+        min-height: 210mm;
+        padding: 1mm;
+        margin: 3mm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .subpage {
+        padding: 1cm;
+        border: 5px red solid;
+        height: 257mm;
+        outline: 2cm #FFEAEA solid;
+    }
+    td {
+      width:42mm;
+      height: 200mm;
+    }
+
+    p {
+      height: 21mm;
+      text-align: right;
+      text-orientation: sideways;
+      margin-right: 2cm;
+      font-weight: bold;
+      font-stretch: expanded;
+    }
+    
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    @media print {
+        html, body {
+            width: 210mm;
+            height: 297mm;        
+        }
+        .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }
+    span.test2 {
+    	text-align: right;
+    	writing-mode: vertical-rl;
+    }
+
+	</style>
+
+</head>
+<body>
+<div class="book">
+    <div class="page">
+
+</style>
+</head>
+<body>
+       <span class="test2">1</span> 
+       <p><span class="test2">When</span></p>
+       <hr style="height:2px;border-width:0;color:gray;background-color:black">
+       <span class="test2">2</span> 
+       <p><span class="test2">Amount</span></p>
+       <hr style="height:2px;border-width:0;color:black;background-color:black">
+       <span class="test2">3</span> 
+       <p><span class="test2">Adjective</span></p>
+       <hr style="height:2px;border-width:0;color:black;background-color:black">
+       <span class="test2">4</span> 
+       <p><span class="test2">Person</span></p>
+       <hr style="height:2px;border-width:0;color:black;background-color:black">
+       <span class="test2">5</span> 
+       <p><span class="test2">Verb</span></p>
+       <hr style="height:2px;border-width:0;color:gray;background-color:black">
+       <span class="test2">6</span> 
+       <p><span class="test2">How</span></p>
+       <hr style="height:2px;border-width:0;color:gray;background-color:black">
+       <span class="test2">7</span> 
+       <p><span class="test2">Place</span></p>
+       <hr style="height:2px;border-width:0;color:black;background-color:black">
+       <span class="test2">8</span> 
+       <p><span class="test2">Puntuation </span></p>
+    </div>
+</div>
+</body>
+</html>
